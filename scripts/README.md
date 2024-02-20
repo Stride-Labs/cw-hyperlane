@@ -10,6 +10,8 @@ Create a `config.yaml` file in the root directory of the project. Default option
 
 Also, you can check the full list of options in the [config.ts](./src/config.ts) file.
 
+You can generate a private key through the CLI with `binaryd keys export {key-name}`
+
 ```yaml
 network:
   id: "osmo-test-5"

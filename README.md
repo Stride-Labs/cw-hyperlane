@@ -17,6 +17,8 @@
 cargo build
 
 cargo wasm
+
+make optimize
 ```
 
 ## How to test
@@ -35,6 +37,10 @@ cargo test
 
 grcov . -s . --binary-path ./target/debug/ -t lcov --branch --ignore-not-existing -o ./target/debug/coverage/
 ```
+
+## Uploading and deploying
+
+See `scripts`
 
 ## Deploy Sequence
 
