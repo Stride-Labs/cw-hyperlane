@@ -20,6 +20,7 @@ import {
   HplTestMockIsm,
 } from "./contracts";
 import { Context } from "./types";
+import { bech32 } from "bech32";
 
 export type Contracts = {
   core: {
@@ -84,7 +85,16 @@ export const deploy_ism = async (
             set_validators: {
               domain: Number(domain),
               threshold,
-              validators: addrs,
+              validators: addrs.map((address) => {
+                // If dealing with cosmos addresses, convert to the hex representation
+                if (address.startsWith(client.hrp)) {
+                  let decoded = bech32.decode(address);
+                  let converted = bech32.fromWords(decoded.words);
+                  let hexAddress = Buffer.from(converted).toString("hex");
+                  return hexAddress
+                }
+                return address
+              }),
             },
           },
           "auto"

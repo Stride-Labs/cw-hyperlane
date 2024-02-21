@@ -10,36 +10,32 @@ Create a `config.yaml` file in the root directory of the project. Default option
 
 Also, you can check the full list of options in the [config.ts](./src/config.ts) file.
 
-You can generate a private key through the CLI with `binaryd keys export {key-name}`
-
 ```yaml
 network:
+  # Chain ID
   id: "osmo-test-5"
+  # Bech32 prefix
   hrp: "osmo"
-  url: "https://rpc.osmotest5.osmosis.zone/"
+  # RPC endpoint
+  url: "https://rpc.osmotest5.osmosis.zone:443"
+  # Gas price and denom
   gas:
     price: "0.025"
     denom: "uosmo"
-  domain: 1037 # osmo-test-5 -> ascii / decimal -> sum
+  # Take the chain ID and apply an ascii / decimal conversion, 
+  # then sum each integer
+  domain: 1037 
 
-signer: { PRIVATE_KEY }
+signer: { MNEMONIC }
 
 deploy:
   ism:
     type: multisig
     owner: { SIGNER_ADDRESS }
     validators:
-      5:
+      { DOMAIN }:
         addrs:
-          - { SIGNER_ETH_ADDRESS }
-        threshold: 1
-      420:
-        addrs:
-          - { SIGNER_ETH_ADDRESS }
-        threshold: 1
-      421613:
-        addrs:
-          - { SIGNER_ETH_ADDRESS }
+          - { ADDRESS }
         threshold: 1
 
   hooks:
@@ -73,7 +69,7 @@ pnpm upload
 ### Deploying Contracts
 
 ```bash
-pnpm deploy
+pnpm run deploy
 ```
 
 ## Maintaining

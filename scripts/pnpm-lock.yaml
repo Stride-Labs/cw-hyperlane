@@ -4,63 +4,71 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@cosmjs/cosmwasm-stargate':
-    specifier: ^0.32.2
-    version: 0.32.2
-  '@cosmjs/crypto':
-    specifier: ^0.32.2
-    version: 0.32.2
-  '@cosmjs/encoding':
-    specifier: ^0.32.2
-    version: 0.32.2
-  '@cosmjs/proto-signing':
-    specifier: ^0.32.2
-    version: 0.32.2
-  '@cosmjs/stargate':
-    specifier: ^0.32.2
-    version: 0.32.2
-  '@cosmjs/tendermint-rpc':
-    specifier: ^0.32.2
-    version: 0.32.2
-  axios:
-    specifier: ^1.6.7
-    version: 1.6.7
-  colors:
-    specifier: ^1.4.0
-    version: 1.4.0
-  commander:
-    specifier: ^11.1.0
-    version: 11.1.0
-  inversify:
-    specifier: ^6.0.1
-    version: 6.0.1
-  readline:
-    specifier: ^1.3.0
-    version: 1.3.0
-  reflect-metadata:
-    specifier: ^0.1.13
-    version: 0.1.13
+importers:
 
-devDependencies:
-  '@types/js-yaml':
-    specifier: ^4.0.8
-    version: 4.0.8
-  '@types/node':
-    specifier: ^20.4.4
-    version: 20.4.4
-  ts-node:
-    specifier: ^10.9.1
-    version: 10.9.1(@types/node@20.4.4)(typescript@5.1.6)
-  ts-yaml:
-    specifier: ^1.0.0
-    version: 1.0.0
-  tsx:
-    specifier: ^3.13.0
-    version: 3.13.0
-  typescript:
-    specifier: ^5.1.6
-    version: 5.1.6
+  .:
+    dependencies:
+      '@cosmjs/cosmwasm-stargate':
+        specifier: ^0.32.2
+        version: 0.32.2
+      '@cosmjs/crypto':
+        specifier: ^0.32.2
+        version: 0.32.2
+      '@cosmjs/encoding':
+        specifier: ^0.32.2
+        version: 0.32.2
+      '@cosmjs/proto-signing':
+        specifier: ^0.32.2
+        version: 0.32.2
+      '@cosmjs/stargate':
+        specifier: ^0.32.2
+        version: 0.32.2
+      '@cosmjs/tendermint-rpc':
+        specifier: ^0.32.2
+        version: 0.32.2
+      axios:
+        specifier: ^1.6.7
+        version: 1.6.7
+      bech32:
+        specifier: ^2.0.0
+        version: 2.0.0
+      colors:
+        specifier: ^1.4.0
+        version: 1.4.0
+      commander:
+        specifier: ^11.1.0
+        version: 11.1.0
+      inversify:
+        specifier: ^6.0.1
+        version: 6.0.1
+      js-yaml:
+        specifier: ^4.1.0
+        version: 4.1.0
+      readline:
+        specifier: ^1.3.0
+        version: 1.3.0
+      reflect-metadata:
+        specifier: ^0.1.13
+        version: 0.1.13
+    devDependencies:
+      '@types/js-yaml':
+        specifier: ^4.0.8
+        version: 4.0.8
+      '@types/node':
+        specifier: ^20.4.4
+        version: 20.4.4
+      ts-node:
+        specifier: ^10.9.1
+        version: 10.9.1(@types/node@20.4.4)(typescript@5.1.6)
+      ts-yaml:
+        specifier: ^1.0.0
+        version: 1.0.0
+      tsx:
+        specifier: ^3.13.0
+        version: 3.13.0
+      typescript:
+        specifier: ^5.1.6
+        version: 5.1.6
 
 packages:
 
@@ -520,6 +528,10 @@ packages:
       sprintf-js: 1.0.3
     dev: true
 
+  /argparse@2.0.1:
+    resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+    dev: false
+
   /arrify@1.0.1:
     resolution: {integrity: sha512-3CYzex9M9FGQjCGMGyi6/31c8GJbgb0qGyrx5HWxPd0aCwh4cB2YjMb2Xf9UuoogrMrlO9cTqnB5rI5GHZTcUA==}
     engines: {node: '>=0.10.0'}
@@ -545,6 +557,10 @@ packages:
 
   /bech32@1.1.4:
     resolution: {integrity: sha512-s0IrSOzLlbvX7yp4WBfPITzpAU8sqQcpsmwXDiKwrG4r491vwCO/XpejasRNl0piBMe/DvP4Tz0mIS/X1DPJBQ==}
+    dev: false
+
+  /bech32@2.0.0:
+    resolution: {integrity: sha512-LcknSilhIGatDAsY1ak2I8VtGaHNhgMSYVxFrGLXv+xLHytaKZKcaUJJUE7qmBr7h33o5YQwP55pMI0xmkpJwg==}
     dev: false
 
   /bn.js@4.12.0:
@@ -803,6 +819,13 @@ packages:
       argparse: 1.0.10
       esprima: 4.0.1
     dev: true
+
+  /js-yaml@4.1.0:
+    resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
+    hasBin: true
+    dependencies:
+      argparse: 2.0.1
+    dev: false
 
   /libsodium-sumo@0.7.13:
     resolution: {integrity: sha512-zTGdLu4b9zSNLfovImpBCbdAA4xkpkZbMnSQjP8HShyOutnGjRHmSOKlsylh1okao6QhLiz7nG98EGn+04cZjQ==}

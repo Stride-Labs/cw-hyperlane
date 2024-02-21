@@ -1,8 +1,31 @@
 network:
-  id: "localosmosis"
+  # Chain ID
+  id: "osmo-test-5"
+  # Bech32 prefix
   hrp: "osmo"
-  url: "http://localhost:26657"
-  gas: "0.025uosmo"
-  domain: "2303"
+  # RPC endpoint
+  url: "https://rpc.osmotest5.osmosis.zone:443"
+  # Gas price and denom
+  gas:
+    price: "0.025"
+    denom: "uosmo"
+  # Take the chain ID and apply an ascii / decimal conversion, 
+  # then sum each integer
+  domain: 1037 
 
-signer: deadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeefdeadbeef
+signer: "close soup ..."
+
+deploy:
+  ism:
+    type: multisig
+    owner: <signer>
+    validators:
+      # Note: this integer comes from the domain above
+      1037:
+        addrs:
+          - osmo1uk4ze0x4nvh4fk0xm4jdud58eqn4yxhrqyeqwq
+        threshold: 1
+
+  hooks:
+    default:
+      type: mock

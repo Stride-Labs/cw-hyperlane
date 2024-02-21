@@ -28,3 +28,7 @@ Cargo.lock
 .idea/
 
 **/*.profraw
+
+# Local contexts
+OSMO.json
+STRIDE.json
