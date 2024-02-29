@@ -290,6 +290,7 @@ export const deploy_igp = async (
     owner: client.signer,
     gas_token: settings.token || config.network.gas.denom,
     beneficiary: client.signer,
+    default_gas_usage: 10000000
   });
 
   // init igp oracle

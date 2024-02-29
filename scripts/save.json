@@ -1,0 +1,107 @@
+{
+  "contracts": {
+    "hpl_hook_aggregate": {
+      "address": "osmo14rse3e7rkc3qt7drmlulwlkrlzqvh7hv277zv05kyfuwl74udx5sjvxyk0",
+      "codeId": 1,
+      "digest": "678c7918dcacb431428899c1b4c3b33ff21759693e07bcb917e1cd166bdcae0b"
+    },
+    "hpl_hook_fee": {
+      "codeId": 2,
+      "digest": "0fdacec09c4a641569febf3065e7e36bc067ab4e210d4d0dd14837532d7b9326"
+    },
+    "hpl_hook_merkle": {
+      "address": "osmo1qjxu65ucccpg8c5kac8ng6yxfqq85fluwd0p9nt74g2304qw8eyq6w4xv4",
+      "codeId": 3,
+      "digest": "965c4790f2d263d076fdeb3639872e5494e8621092f638633af27e90c91904c4"
+    },
+    "hpl_hook_pausable": {
+      "codeId": 4,
+      "digest": "767bf6271444a0da431dafa4218d4b5b0960c5ec204692f73863cfa5c2c5cf3c"
+    },
+    "hpl_hook_routing": {
+      "codeId": 5,
+      "digest": "30658f321220137f84135affc3a7056489aab1fff57b39910ae623243e82ed8a"
+    },
+    "hpl_hook_routing_custom": {
+      "codeId": 6,
+      "digest": "1998c8d1af05b776f3901dba3dcc42a92c1afc434e4fe3c7868cdd0f0bdf6207"
+    },
+    "hpl_hook_routing_fallback": {
+      "codeId": 7,
+      "digest": "db09517bc9481ba1db8e2dda08860a86f63a9e834b368abad00a283d9f9f307c"
+    },
+    "hpl_igp": {
+      "codeId": 8,
+      "digest": "8993e1ab91077f09b6c38299827980072548d01e323539b119b4f6175c2c35d6"
+    },
+    "hpl_igp_oracle": {
+      "codeId": 9,
+      "digest": "940017a5a1384af17161928f41547ea3044cbe32cc9c82725b2cb411ea7f88a4"
+    },
+    "hpl_ism_aggregate": {
+      "codeId": 10,
+      "digest": "f9401eeffd646e391a06c0b132f04c5b05c0207c0833fe6e778c4b44739ccf82"
+    },
+    "hpl_ism_multisig": {
+      "address": "osmo1g4xlpqy29m50j5y69reguae328tc9y83l4299pf2wmjn0xczq5jsrsqcej",
+      "codeId": 11,
+      "digest": "ad982899521c744f9fc2e01ae404e9c8522840f3a765c5149b4433366b631ecf"
+    },
+    "hpl_ism_pausable": {
+      "codeId": 12,
+      "digest": "a1542f62ad048e05a6bc0d55bcaa3ba31649705b3406d23a2c5b70d060bb71fd"
+    },
+    "hpl_ism_routing": {
+      "codeId": 13,
+      "digest": "b4d0f063b3f3a97b384d22366d72b8ce6e5887446f506b2ea95da4d3c214d95c"
+    },
+    "hpl_mailbox": {
+      "address": "osmo1apuuzd37wv4xaf6jf2f44qv28elxv4ph48p7jfpep9mgdnv4hj9qpal8km",
+      "codeId": 14,
+      "digest": "6f536959617cdab9431bc24a21330ebbd0a0b4c5ca0af9cff10fe087e086c793"
+    },
+    "hpl_test_mock_hook": {
+      "address": "osmo14haqsatfqxh3jgzn6u7ggnece4vhv0nt8a8ml4rg29mln9hdjfdq406w6c",
+      "codeId": 15,
+      "digest": "f9c13b06ecf35f913a90498c8151aa0ac67ccc035b6efc147b676f4c585d80b5"
+    },
+    "hpl_test_mock_ism": {
+      "codeId": 16,
+      "digest": "30b87b962b0ce2cbeb0d4c6046aa663e1708ae00eb5d073655cf92625d03cd6d"
+    },
+    "hpl_test_mock_msg_receiver": {
+      "address": "osmo14nurau9scuqhr3sczktx63sr8kdpvwh00zyftamrrn685vex2uus56jxvu",
+      "codeId": 17,
+      "digest": "75e3299433c8d06f57a76fa7959774bac6a2154a32b5b9a06210f02cdf2f4b93"
+    },
+    "hpl_validator_announce": {
+      "address": "osmo19cc0p93h5g9prs8stre4zgwmngmlxc48pg3hxjvt8tkujn6m5wpsq7yueg",
+      "codeId": 18,
+      "digest": "15cdb600c67e8f6e1d6ad30ddecec0a678c90397d77046fbe2e68bd6b4c904bb"
+    },
+    "hpl_warp_cw20": {
+      "codeId": 19,
+      "digest": "bf1ca430a0785a5202b087e549a7f61e5b0fd80aec9e071624c0c3c726c17f8b"
+    },
+    "hpl_warp_native": {
+      "codeId": 20,
+      "digest": "997460a0cd96989ad775320491e5458c1abaad208289afded1e80d53b96a3aa0"
+    },
+    "hpl_default_ism": {
+      "codeId": 11,
+      "digest": "ad982899521c744f9fc2e01ae404e9c8522840f3a765c5149b4433366b631ecf",
+      "address": "osmo1g4xlpqy29m50j5y69reguae328tc9y83l4299pf2wmjn0xczq5jsrsqcej"
+    },
+    "hpl_default_hook": {
+      "codeId": 15,
+      "digest": "f9c13b06ecf35f913a90498c8151aa0ac67ccc035b6efc147b676f4c585d80b5",
+      "address": "osmo14haqsatfqxh3jgzn6u7ggnece4vhv0nt8a8ml4rg29mln9hdjfdq406w6c"
+    },
+    "hpl_required_hook": {
+      "codeId": 1,
+      "digest": "678c7918dcacb431428899c1b4c3b33ff21759693e07bcb917e1cd166bdcae0b",
+      "address": "osmo14rse3e7rkc3qt7drmlulwlkrlzqvh7hv277zv05kyfuwl74udx5sjvxyk0"
+    }
+  },
+  "address": "osmo1uk4ze0x4nvh4fk0xm4jdud58eqn4yxhrqyeqwq"
+}

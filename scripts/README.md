@@ -10,6 +10,8 @@ Create a `config.yaml` file in the root directory of the project. Default option
 
 Also, you can check the full list of options in the [config.ts](./src/config.ts) file.
 
+Generate a private key with: `{binary} keys export {name} --unarmored-hex --unsafe`
+
 ```yaml
 network:
   # Chain ID
@@ -26,7 +28,7 @@ network:
   # then sum each integer
   domain: 1037 
 
-signer: { MNEMONIC }
+signer: { PRIVATE_KEY }
 
 deploy:
   ism:

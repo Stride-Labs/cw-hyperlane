@@ -1,0 +1,35 @@
+{
+    "chains": {
+        "osmosis": {
+            "name": "osmosis",
+            "domainId": "318",
+            "chainId": "OSMO",
+            "mailbox": "0xe879c1363e732a6ea7524a935a818a3e7e665437a9c3e92439097686cd95bc8a",
+            "validatorAnnounce": "0x2e30f09637a20a11c0f058f35121db9a37f362a70a2373498b3aedc94f5ba383",
+            "merkleTreeHook": "0x048dcd5398c60283e296ee0f34688648007a27fc735e12cd7eaa1517d40e3e48",
+            "interchainGasPaymaster": "0x2e30f09637a20a11c0f058f35121db9a37f362a70a2373498b3aedc94f5ba383",
+            "protocol": "cosmos",
+            "finalityBlocks": 1,
+            "rpcUrls": [
+              {
+                "http": "http://localhost:26357"
+              }
+            ],
+            "grpcUrls": "http://localhost:9060",
+            "canonicalAsset": "uosmo",
+            "bech32Prefix": "osmo",
+            "index": {
+              "from": 4000000,
+              "chunk": 100000
+            },
+            "blocks": {
+              "reorgPeriod": 1
+            },
+            "gasPrice": {
+              "amount": "0.025",
+              "denom": "uosmo"
+            },
+            "contractAddressBytes": 32
+        }
+    }
+}

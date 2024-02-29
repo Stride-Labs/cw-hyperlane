@@ -6,7 +6,7 @@ import {
   Tendermint37Client,
   TendermintClient,
 } from "@cosmjs/tendermint-rpc";
-import { DirectSecp256k1HdWallet } from "@cosmjs/proto-signing";
+import { DirectSecp256k1Wallet } from "@cosmjs/proto-signing";
 import { GasPrice, SigningStargateClient } from "@cosmjs/stargate";
 import { Secp256k1, keccak256 } from "@cosmjs/crypto";
 
@@ -133,9 +133,9 @@ export async function getSigningClient({
   network,
   signer,
 }: Config): Promise<Client> {
-  const wallet = await DirectSecp256k1HdWallet.fromMnemonic(
-    signer,
-    {prefix: network.hrp},
+  const wallet = await DirectSecp256k1Wallet.fromKey(
+    Buffer.from(signer, "hex"),
+    network.hrp,
   );
 
   const [account] = await wallet.getAccounts();
