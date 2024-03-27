@@ -187,7 +187,7 @@ export async function getSigningClient(
 
   const pubkey = Secp256k1.uncompressPubkey(account.pubkey);
   const ethaddr = keccak256(pubkey.slice(1)).slice(-20);
-
+  console.log(Buffer.from(ethaddr).toString('hex'))
   return {
     wasm,
     stargate,

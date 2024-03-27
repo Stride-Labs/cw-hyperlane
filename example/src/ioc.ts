@@ -40,17 +40,45 @@ export async function injectDependencies(cmd: Command): Promise<void> {
     ? mnemonicToAccount(mnemonic)
     : privateKeyToAccount(privateKey as Hex);
 
-  const provider = {
-    query: createPublicClient({
-      chain: sepolia,
-      transport: http(endpoint),
-    }),
-    exec: createWalletClient({
-      chain: sepolia,
-      account,
-      transport: http(endpoint),
-    }),
-  };
+    const provider = {
+      query: createPublicClient({
+        chain: {
+          id: 2410,
+          network: 'Karak',
+          name: 'Karak',
+          nativeCurrency: { name: ' Ether', symbol: 'ETH', decimals: 18 },
+          rpcUrls: {
+            default: {
+              http: ['https://hlane.rpc.karak.network']
+            },
+            public: {
+              http: ['https://hlane.rpc.karak.network'],
+              webSocket: undefined
+            }
+          }
+        },
+        transport: http(endpoint),
+      }),
+      exec: createWalletClient({
+        chain: {
+          id: 2410,
+          network: 'Karak',
+          name: 'Karak',
+          nativeCurrency: { name: ' Ether', symbol: 'ETH', decimals: 18 },
+          rpcUrls: {
+            default: {
+              http: ['https://hlane.rpc.karak.network']
+            },
+            public: {
+              http: ['https://hlane.rpc.karak.network'],
+              webSocket: undefined
+            }
+          }
+        },
+        account,
+        transport: http(endpoint),
+      }),
+    };
 
   CONTAINER.bind(Dependencies).toConstantValue({ account, provider });
 }

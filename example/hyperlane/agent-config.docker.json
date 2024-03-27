@@ -27,25 +27,25 @@
       "protocol": "ethereum",
       "rpcUrls": [
         {
-          "http": "https://hlane.rpc.karak.network"
+          "http": "https://stride.rpc.karak.network?key=40i8LfO3b9lff9oa6q4Q6a0Ez5ijb8"
         }
       ],
-      "merkleRootMultisigIsmFactory": "0x8F0358fdc41A513Db4513DD0a5c63127424bD6a2",
-      "messageIdMultisigIsmFactory": "0x77b9323C20059e27736b5E52188FE81Ed0F87Ecd",
-      "aggregationIsmFactory": "0xA57A01B8b7Cd279597CeD0CFEcF10947c89DCE8d",
-      "aggregationHookFactory": "0x072c5561b46Bc404974a404C1108506AB37e1cBb",
-      "routingIsmFactory": "0x21582a16497f5f62675476A1c912a85847CB77fb",
-      "interchainSecurityModule": "0xF5E2871385C7E807e2D233962c5B474AC03B083c",
-      "messageIdMultisigIsm": "0xF5E2871385C7E807e2D233962c5B474AC03B083c",
-      "proxyAdmin": "0xF2C89960B6D63eC6c61dF3EA8BaFa0a02c26e8C9",
-      "storageGasOracle": "0x622333688CC1878C7ff4205c89bDe051798788A7",
-      "interchainGasPaymaster": "0xF91D0015E52D2FbFd4A900A64f30287523004CC6",
-      "merkleTreeHook": "0x0a23342520Aa8Ca963c4201801F4D3E95e731637",
-      "aggregationHook": "0x4dbA9f021D7a5397824759e4681CA0E8efaDE22a",
-      "mailbox": "0x6400EdB95556AA99F1c09df7e92bf9227B9d19E4",
-      "validatorAnnounce": "0xc9139a7D781E9CB866a1DF428bc5C625170E9ECf",
-      "testRecipient": "0x1aB297221201BEEb902e23b53227ede50999cB32",
-      "protocolFee": "0xCDBd0cd45fF679CD3411269a9688903d3Fc1Ac88"
+      "merkleRootMultisigIsmFactory": "0xCBA3973e43B6E463d9f003c899C0d40158096DAb",
+      "messageIdMultisigIsmFactory": "0x838082ff650F81F7099D1384CA7C1cc016caD6ba",
+      "aggregationIsmFactory": "0x6255A6617C56e3520C989a79F171A3cfA037a768",
+      "aggregationHookFactory": "0xb228Bf3A2f2d7495c84695FfF0dD78cD94707Bdd",
+      "routingIsmFactory": "0xB98a2f580833D965AD40aFA58Ac25fb6189A9752",
+      "interchainSecurityModule": "0x4EE605Ed6b5A9DD353B7D88e099809081De2a92C",
+      "messageIdMultisigIsm": "0x4EE605Ed6b5A9DD353B7D88e099809081De2a92C",
+      "proxyAdmin": "0x8178185edfC5591048De218Fcbdec8dFCDDf2491",
+      "storageGasOracle": "0xfA2cB8100F0D086a452640c602f7d8ECE340C1BF",
+      "interchainGasPaymaster": "0x3DCc5E0A63433BDc1d143175bb8ce244Dafc9381",
+      "merkleTreeHook": "0x8eF8ad6AC3E5b41C448e20cF6A9728bA0eC145D4",
+      "aggregationHook": "0x89Cf5871241F9e81168632C5A3f031F60567b6C7",
+      "protocolFee": "0xCDBd0cd45fF679CD3411269a9688903d3Fc1Ac88",
+      "mailbox": "0xBcE1F98deB90e00e8B4f936060728529DE76Ac94",
+      "validatorAnnounce": "0x423c1FC2eBd48D07DA79dEd8decB98Cc425c9C3e",
+      "testRecipient": "0x8cE2C95C9F8017D298c242b2a37fBe70a39BE318"  
     },
     "strideinternal1": {
       "name": "strideinternal1",
