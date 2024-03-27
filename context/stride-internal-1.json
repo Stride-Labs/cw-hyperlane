@@ -1,89 +1,89 @@
 {
   "artifacts": {
-    "hpl_mailbox": 141,
-    "hpl_validator_announce": 142,
-    "hpl_ism_aggregate": 143,
-    "hpl_ism_multisig": 144,
-    "hpl_ism_pausable": 145,
-    "hpl_ism_routing": 146,
-    "hpl_igp": 147,
-    "hpl_hook_aggregate": 148,
-    "hpl_hook_fee": 149,
-    "hpl_hook_merkle": 150,
-    "hpl_hook_pausable": 151,
-    "hpl_hook_routing": 152,
-    "hpl_hook_routing_custom": 153,
-    "hpl_hook_routing_fallback": 154,
-    "hpl_test_mock_hook": 155,
-    "hpl_test_mock_ism": 156,
-    "hpl_test_mock_msg_receiver": 157,
-    "hpl_igp_oracle": 158,
-    "hpl_warp_cw20": 159,
-    "hpl_warp_native": 160
+    "hpl_mailbox": 221,
+    "hpl_validator_announce": 222,
+    "hpl_ism_aggregate": 223,
+    "hpl_ism_multisig": 224,
+    "hpl_ism_pausable": 225,
+    "hpl_ism_routing": 226,
+    "hpl_igp": 227,
+    "hpl_hook_aggregate": 228,
+    "hpl_hook_fee": 229,
+    "hpl_hook_merkle": 230,
+    "hpl_hook_pausable": 231,
+    "hpl_hook_routing": 232,
+    "hpl_hook_routing_custom": 233,
+    "hpl_hook_routing_fallback": 234,
+    "hpl_test_mock_hook": 235,
+    "hpl_test_mock_ism": 236,
+    "hpl_test_mock_msg_receiver": 237,
+    "hpl_igp_oracle": 238,
+    "hpl_warp_cw20": 239,
+    "hpl_warp_native": 240
   },
   "deployments": {
     "core": {
       "mailbox": {
         "type": "hpl_mailbox",
-        "address": "stride1f0ltv6y0zm2q4cahsnf5kdzhaxhwqd343fzfv6sq9yj3gucwsagqszjx7q",
-        "hexed": "0x4bfeb6688f16d40ae3b784d34b3457e9aee036358a44966a00292514730e8750"
+        "address": "stride1m05rd5vy920xs5dpft6jg79t5zyw2ue6jtdhncxczs2dsdj083aqf9jxhg",
+        "hexed": "0xdbe836d1842a9e6851a14af52478aba088e5733a92db79e0d81414d8364f3c7a"
       },
       "validator_announce": {
         "type": "hpl_validator_announce",
-        "address": "stride1rykanrk3fjt2jgkulw5ehh27fqyks5py5mz4dkgd089fky8rz2kqfxzfs2",
-        "hexed": "0x192dd98ed14c96a922dcfba99bdd5e4809685024a6c556d90d79ca9b10e312ac"
+        "address": "stride12ah62qq5wvtsxnfkderq0ax4y37nt9cywkgwhag4r6ekylcthjxq4t5xhr",
+        "hexed": "0x576fa500147317034d366e4607f4d5247d3597047590ebf5151eb3627f0bbc8c"
       }
     },
     "isms": {
       "type": "hpl_ism_routing",
-      "address": "stride1m8gfqx035wx50gmv8d6uqtjruhhaeaygwm4lj5uq0vmq2h943dtq2nj2qf",
-      "hexed": "0xd9d09019f1a38d47a36c3b75c02e43e5efdcf48876ebf953807b36055cb58b56",
+      "address": "stride16vs2dvkhpue9t3r6ss26yzv9nzdpzyeuvqz9wr3z6l0vtq7x4waswg4kvw",
+      "hexed": "0xd320a6b2d70f3255c47a8415a20985989a11133c6004570e22d7dec583c6abbb",
       "isms": {
-        "domain": 0,
+        "domain": 2410,
         "route": {
           "type": "hpl_ism_multisig",
-          "address": "stride1wfam6yt7rdfc9m7fzhng4zp8cgums62gy43ar8pr97p0nnq46f2s9de0rt",
-          "hexed": "0x727bbd117e1b5382efc915e68a8827c239b869482563d19c232f82f9cc15d255"
+          "address": "stride1wv08hlrrw8r3muyrs2vrku73xar0vmywgevp8zhngwxa3p82te6susnek5",
+          "hexed": "0x731e7bfc6371c71df08382983b73d13746f66c8e4658138af3438dd884ea5e75"
         }
       }
     },
     "hooks": {
       "default": {
         "type": "hpl_hook_aggregate",
-        "address": "stride1h0krvzfgsj8z8gaveyuq55agemg45znv8dful2l3t6pm6emcfxqqct5scl",
-        "hexed": "0xbbec360928848e23a3acc9380a53a8ced15a0a6c3b53cfabf15e83bd67784980",
+        "address": "stride1jey0qhg3hacjd7vx7mnmytm8e4ktq0h9whthmdkh9vcrydr65zvsp8ath8",
+        "hexed": "0x9648f05d11bf7126f986f6e7b22f67cd6cb03ee575d77db6d72b3032347aa099",
         "hooks": [
           {
             "type": "hpl_hook_merkle",
-            "address": "stride1y8u47uqrd87kc5ep3a2jdgua5g38ajgmgankeg2wgskllmphcmcs4y5wwq",
-            "hexed": "0x21f95f700369fd6c53218f5526a39da2227ec91b47676ca14e442dffec37c6f1"
+            "address": "stride1xvrc87td6jup8z4cmd7sksglfscf03qlaw0kw7hn3xwyf4erzees8qcxk6",
+            "hexed": "0x330783f96dd4b8138ab8db7d0b411f4c3097c41feb9f677af3899c44d7231673"
           },
           {
             "type": "hpl_igp",
-            "address": "stride1alw74nn6ju7hzdlrgxs3r4hvyexjqa99v8p7azk9tm48ksrjcc0qdvj8wn",
-            "hexed": "0xefddeace7a973d7137e341a111d6ec264d2074a561c3ee8ac55eea7b4072c61e",
+            "address": "stride1q08e5c88cgh8nnhu5maz5pm0jahwxgr6su4uefy9y4vfasuq5k2qaxg3fk",
+            "hexed": "0x03cf9a60e7c22e79cefca6fa2a076f976ee3207a872bcca48525589ec380a594",
             "oracle": {
               "type": "hpl_igp_oracle",
-              "address": "stride1q79muzlkpexy6gn4r3u6dk8san09s9mpmgpv27y7l2ne2y03t20s4shpnv",
-              "hexed": "0x078bbe0bf60e4c4d22751c79a6d8f0ecde581761da02c5789efaa79511f15a9f"
+              "address": "stride17zm34k523dwj6sm7rhg7s9jp9jjefv7l5gvwpv65sa6jsrdfkgvqk3k4v8",
+              "hexed": "0xf0b71ada8a8b5d2d437e1dd1e816412ca594b3dfa218e0b3548775280da9b218"
             }
           }
         ]
       },
       "required": {
         "type": "hpl_hook_aggregate",
-        "address": "stride1npx0gyegxde4zhhager4y0262w3ae9jv36ns02zn29leumrylrjs9qn0c2",
-        "hexed": "0x984cf413283373515efd4647523d5a53a3dc964c8ea707a853517f9e6c64f8e5",
+        "address": "stride1zjccrjkw9dqzce3vv9avqa700sf6yruaztusddaeghnah2clgm0qsmk9l4",
+        "hexed": "0x14b181cace2b402c662c617ac077cf7c13a20f9d12f906b7b945e7dbab1f46de",
         "hooks": [
           {
             "type": "hpl_hook_pausable",
-            "address": "stride1n02fcq4hdmrm3wm4jj8g2l4lxgu8gq88p024aga9sy5y4svr6t6qxxpesx",
-            "hexed": "0x9bd49c02b76ec7b8bb75948e857ebf32387400e70bd55ea3a581284ac183d2f4"
+            "address": "stride1kjjn75r6uax96htyvt5wsgd8hep369w8zzq4sw4juatzm5vcj34qkcyt23",
+            "hexed": "0xb4a53f507ae74c5d5d6462e8e821a7be431d15c71081583ab2e7562dd198946a"
           },
           {
             "type": "hpl_hook_fee",
-            "address": "stride1c8mvezddpf23gy9z2uynml9tret5u7ajzrmrvsh4jshfkmgp2g0q6s5a74",
-            "hexed": "0xc1f6cc89ad0a551410a257093dfcab1e574e7bb210f63642f5942e9b6d01521e"
+            "address": "stride1vt4vf7p48mqp2qpkeckyd7hmhnsquqjjhamusnxfnfvv4h24am7sxv96gx",
+            "hexed": "0x62eac4f8353ec0150036ce2c46fafbbce00e0252bf77c84cc99a58cadd55eefd"
           }
         ]
       }
@@ -95,8 +95,8 @@
     "test": {
       "msg_receiver": {
         "type": "hpl_test_mock_msg_receiver",
-        "address": "stride1t6syms5zfadcyahhrzmun8c5wuwx8ylqdzxs84qct7c65m63yf2qszf3px",
-        "hexed": "0x5ea04dc2824f5b8276f718b7c99f14771c6393e0688d03d4185fb1aa6f512254"
+        "address": "stride16xxd9jpfgzpp06nvhqatvufj9gflc99wzsawwcewhzhcee6enursp7egv8",
+        "hexed": "0xd18cd2c829408217ea6cb83ab671322a13fc14ae143ae7632eb8af8ce7599f07"
       }
     }
   }

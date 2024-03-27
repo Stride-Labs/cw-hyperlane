@@ -45,7 +45,7 @@
       "protocolFee": "0xCDBd0cd45fF679CD3411269a9688903d3Fc1Ac88",
       "mailbox": "0xBcE1F98deB90e00e8B4f936060728529DE76Ac94",
       "validatorAnnounce": "0x423c1FC2eBd48D07DA79dEd8decB98Cc425c9C3e",
-      "testRecipient": "0x8cE2C95C9F8017D298c242b2a37fBe70a39BE318"  
+      "testRecipient": "0x8cE2C95C9F8017D298c242b2a37fBe70a39BE318"
     },
     "strideinternal1": {
       "name": "strideinternal1",
@@ -71,17 +71,17 @@
       },
       "contractAddressBytes": 32,
       "index": {
-        "from": 3384149,
+        "from": 3611777,
         "chunk": 10000
       },
       "blocks": {
         "confirmations": 0,
         "reorgPeriod": 0
       },
-      "mailbox": "0x7d0c9dc229354061aa42e9e00fba613942ea4156491ea3c910d78dee6c55eec2",
-      "validatorAnnounce": "0x5d47fb98a3913783442482635c8a7eec3e95d4a7288bef9dbebf55fa96d2742d",
-      "interchainGasPaymaster": "0xf12e8cb751edb5ad29dc3a842bcf94345e9888cf4236d9b8eb18014fb3efee26",
-      "merkleTreeHook": "0x7bf619576be4b79185cf36cd5b3b2174e37829dddfdfb2e88e76078006178b0c"
+      "mailbox": "0x9de541f383f32d6d754fd2c87115f42bc9ed999d09f30610422f56b618e59107",
+      "validatorAnnounce": "0x815fad56db73cd3dbbdffa7f718931f6cf711c91b2ea863b60b7efbaddc23aca",
+      "interchainGasPaymaster": "0x16d12176f70c9802f69526f7284fa059f37913b6ff2b5932616b27e3faf6b267",
+      "merkleTreeHook": "0xa124d00731826880acb37559606d6ca6be46eb35e0a497d353903e700a8dc475"
     }
   }
 }
