@@ -40,3 +40,5 @@ context/*.config.json
 tmp/
 dist/
 node_modules/
+
+**/.ipynb_checkpoints/*

@@ -1,0 +1,13 @@
+{
+  "db": "/etc/data/db",
+  "checkpointSyncer": {
+    "type": "localStorage",
+    "path": "/etc/validator/karak/checkpoint"
+  },
+  "originChainName": "karak",
+  "validator": {
+    "signerType": "hexKey",
+    "key": "0x48cccb40744ff1fd3d174cd53d963877d7e44180e16d139ba4f54dcbdbc366de",
+    "type": "hexKey"
+  }
+}

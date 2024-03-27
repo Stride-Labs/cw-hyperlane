@@ -2,11 +2,11 @@
   "type": "native",
   "mode": "collateral",
 
-  "id": "uosmo",
+  "id": "ustrd",
   "owner": "<signer>",
   "config": {
     "collateral": {
-      "denom": "uosmo"
+      "denom": "ustrd"
     }
   }
 }
