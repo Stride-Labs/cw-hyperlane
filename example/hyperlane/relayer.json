@@ -17,14 +17,14 @@
     "sepolia": {
       "signer": {
         "type": "hexKey",
-        "key": "0x48cccb40744ff1fd3d174cd53d963877d7e44180e16d139ba4f54dcbdbc366de"
+        "key": "0x58308c5490669ea9818d8d799668478943051bf9eead94e70060cd60204d4f23"
       }
     },
-    "osmotest5": {
+    "strideinternal1": {
       "signer": {
         "type": "cosmosKey",
-        "key": "0x46e1fe59288b35645669534354023897ce94bbbeb2c4856389d2745ef06b02bd",
-        "prefix": "osmo"
+        "key": "0xff470fb3c8f770c15211cbcf2386124d6ef98151c1715132044825bdd5b659ed",
+        "prefix": "stride"
       }
     }
   }

@@ -1,0 +1,10 @@
+network:
+  id: "STRIDE"
+  hrp: "stride"
+  url: "http://localhost:26657"
+  gas: 
+    price: "0.025"
+    denom: "ustrd"
+  domain: 459
+
+signer: "87b02600b8e300691689b51254c3fd23fa2d381d6e18a59583d0d483d549ce0f"

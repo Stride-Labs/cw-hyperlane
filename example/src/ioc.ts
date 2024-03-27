@@ -14,6 +14,43 @@ import {
 import { mnemonicToAccount, privateKeyToAccount } from 'viem/accounts';
 import { sepolia } from 'viem/chains';
 
+import { defineChain } from 'viem/utils/chain/defineChain';
+
+export const karak = /*#__PURE__*/ defineChain({
+  id: 2410,
+  network: 'karak',
+  name: 'Karak',
+  nativeCurrency: { name: 'Ether', symbol: 'ETH', decimals: 18 },
+  rpcUrls: {
+    alchemy: {
+      http: ['https://stride.rpc.karak.network?key=40i8LfO3b9lff9oa6q4Q6a0Ez5ijb8'],
+    },
+    infura: {
+      http: ['https://stride.rpc.karak.network?key=40i8LfO3b9lff9oa6q4Q6a0Ez5ijb8'],
+    },
+    default: {
+      http: ['https://stride.rpc.karak.network?key=40i8LfO3b9lff9oa6q4Q6a0Ez5ijb8'],
+    },
+    public: {
+      http: ['https://stride.rpc.karak.network?key=40i8LfO3b9lff9oa6q4Q6a0Ez5ijb8'],
+    },
+  },
+  blockExplorers: {
+    etherscan: {
+      name: 'Etherscan',
+      url: 'https://sepolia.etherscan.io',
+    },
+    default: {
+      name: 'Etherscan',
+      url: 'https://sepolia.etherscan.io',
+    },
+  },
+  contracts: {
+  },
+  testnet: true,
+})
+
+
 export class Dependencies {
   account: Account;
   provider: {
@@ -42,11 +79,11 @@ export async function injectDependencies(cmd: Command): Promise<void> {
 
   const provider = {
     query: createPublicClient({
-      chain: sepolia,
+      chain: karak,
       transport: http(endpoint),
     }),
     exec: createWalletClient({
-      chain: sepolia,
+      chain: karak,
       account,
       transport: http(endpoint),
     }),

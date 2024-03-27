@@ -7,7 +7,7 @@
   "originChainName": "sepolia",
   "validator": {
     "signerType": "hexKey",
-    "key": "0x48cccb40744ff1fd3d174cd53d963877d7e44180e16d139ba4f54dcbdbc366de",
+    "key": "0x58308c5490669ea9818d8d799668478943051bf9eead94e70060cd60204d4f23",
     "type": "hexKey"
   }
 }

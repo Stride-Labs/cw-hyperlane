@@ -27,13 +27,10 @@
       "protocol": "ethereum",
       "rpcUrls": [
         {
-          "http": "https://ethereum-sepolia.blockpi.network/v1/rpc/public"
-        },
-        {
-          "http": "https://eth-sepolia.g.alchemy.com/v2/demo"
-        },
-        {
-          "http": "https://rpc.sepolia.org"
+          "http": "https://patient-holy-paper.ethereum-sepolia.quiknode.pro/df39f185ebc2a4465bfda8a7be99c2627bfa4457",
+          "pagination": {
+            "maxBlockRange": 1000
+          }
         }
       ],
       "merkleRootMultisigIsmFactory": "0x0a71AcC99967829eE305a285750017C4916Ca269",
@@ -90,10 +87,10 @@
         "confirmations": 0,
         "reorgPeriod": 0
       },
-      "mailbox": "0x89c34f43da71a93e9199bbbe65a8b3305016b785306fcb095c7e84b7db839ac3",
-      "validatorAnnounce": "0xd7bdb87c84763644f225dd617fd6afe1ef93a1bf4ae51c5083b190efb4b2a00f",
-      "interchainGasPaymaster": "0x544e76cd10e6ee5c627a3cf759a441083c88582637f3766d25adf15919946b16",
-      "merkleTreeHook": "0x75ad375182f44ab32ffbf5582c0b5ceb51824cb475c38c3a26e293575f6d34fd"
+      "mailbox": "0xc0f478304c2f56253bf5584bc2cbfadcd4fcd0d0163251c84a6ab321bf8a614b",
+      "validatorAnnounce": "0x61055de5bed573878c34df66c432b6952d2e152f094b0c470483b47635aa2802",
+      "interchainGasPaymaster": "0x5efca84f240ac8ec398479b3ce1b2e2331afe1fb3e9fb704fb61f26fe6204f96",
+      "merkleTreeHook": "0x0f9cc2d6fefae3c7bd2cda3f28cd0cf949fa16d822dc3f16e72c6af2ea606d4b"
     }
   }
 }

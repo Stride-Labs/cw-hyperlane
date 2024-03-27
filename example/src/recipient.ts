@@ -8,6 +8,7 @@ import { HYP_MULTSIG_ISM_FACTORY } from './constants';
 import { CONTAINER, Dependencies } from './ioc';
 import { expectNextContractAddr, logTx } from './utils';
 
+
 export const recipientCmd = new Command('deploy-test-recipient').action(
   deployTestRecipient,
 );
