@@ -71,17 +71,17 @@
       },
       "contractAddressBytes": 32,
       "index": {
-        "from": 3611777,
+        "from": 3612573,
         "chunk": 10000
       },
       "blocks": {
         "confirmations": 0,
         "reorgPeriod": 0
       },
-      "mailbox": "0x9de541f383f32d6d754fd2c87115f42bc9ed999d09f30610422f56b618e59107",
-      "validatorAnnounce": "0x815fad56db73cd3dbbdffa7f718931f6cf711c91b2ea863b60b7efbaddc23aca",
-      "interchainGasPaymaster": "0x16d12176f70c9802f69526f7284fa059f37913b6ff2b5932616b27e3faf6b267",
-      "merkleTreeHook": "0xa124d00731826880acb37559606d6ca6be46eb35e0a497d353903e700a8dc475"
+      "mailbox": "0xdbe836d1842a9e6851a14af52478aba088e5733a92db79e0d81414d8364f3c7a",
+      "validatorAnnounce": "0x576fa500147317034d366e4607f4d5247d3597047590ebf5151eb3627f0bbc8c",
+      "interchainGasPaymaster": "0x03cf9a60e7c22e79cefca6fa2a076f976ee3207a872bcca48525589ec380a594",
+      "merkleTreeHook": "0x330783f96dd4b8138ab8db7d0b411f4c3097c41feb9f677af3899c44d7231673"
     }
   }
 }

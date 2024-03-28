@@ -7,15 +7,17 @@ const deployRoutingIsm = async (
   client: Client,
   ism: Extract<IsmType, { type: 'routing' }>,
 ) => {
-  console.log("1");
+  console.log(1);
   const routes = [];
   for (const [domain, v] of Object.entries(ism.isms)) {
+    console.log(2);
     routes.push({
       domain: parseInt(domain),
       route: await deployIsm(ctx, client, v),
     });
   }
-  console.log("2");
+  console.log(3);
+
 
   const routing = await deployContract(ctx, client, 'hpl_ism_routing', {
     owner: ism.owner === '<signer>' ? client.signer : ism.owner,

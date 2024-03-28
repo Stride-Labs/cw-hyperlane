@@ -23,7 +23,7 @@ deploy:
         validators:
           2410:
             addrs:
-              - <signer>
+              - 0xe673896b0ebea59f9af10c6d605a21d727eeebc9
             threshold: 1
 
   hooks:
