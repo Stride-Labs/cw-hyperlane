@@ -21,5 +21,75 @@
     "hpl_warp_cw20": 259,
     "hpl_warp_native": 260
   },
-  "deployments": {}
+  "deployments": {
+    "core": {
+      "mailbox": {
+        "type": "hpl_mailbox",
+        "address": "stride1ervc72r9j94vsl557l3jguvnak3tm6k2p7344zndqa3vhvaksasqwc2c5m",
+        "hexed": "0xc8d98f2865916ac87e94f7e3247193eda2bdeaca0fa35a8a6d0762cbb3b68760"
+      },
+      "validator_announce": {
+        "type": "hpl_validator_announce",
+        "address": "stride1s75z2lm2dw98xxc6lms0rj0887tmxn400u6c8zgr027wfp4zx50sf4fa5p",
+        "hexed": "0x87a8257f6a6b8a731b1afee0f1c9e73f97b34eaf7f358389037abce486a2351f"
+      }
+    },
+    "isms": {
+      "type": "hpl_ism_multisig",
+      "address": "stride1hkg83g7s3gg3jzgse9szcg650l9mx8h8t7wua3uzfd58wnvwq92sv72sr8",
+      "hexed": "0xbd9078a3d08a11190910c9602c23547fcbb31ee75f9dcec7824b68774d8e0155"
+    },
+    "hooks": {
+      "default": {
+        "type": "hpl_hook_aggregate",
+        "address": "stride1vmrwaeht50ujucez3jfr2728gfpux7t638d2f7u3xd6kku9aqjsspm0qs5",
+        "hexed": "0x66c6eee6eba3f92e63228c923579474243c3797a89daa4fb9133756b70bd04a1",
+        "hooks": [
+          {
+            "type": "hpl_hook_merkle",
+            "address": "stride1qrgnjnetjj360q2hn3jp200tjt45wug2eavchjdjmj7a9y2n4mss3n3cmu",
+            "hexed": "0x00d1394f2b94a3a781579c64153deb92eb47710acf598bc9b2dcbdd29153aee1"
+          },
+          {
+            "type": "hpl_igp",
+            "address": "stride1n6crrr87ufqlxc9qymvpdf3k5dcvlsamqahynfy9kyf6yxe9wjhsdx59wp",
+            "hexed": "0x9eb0318cfee241f360a026d816a636a370cfc3bb076e49a485b113a21b2574af",
+            "oracle": {
+              "type": "hpl_igp_oracle",
+              "address": "stride1yw5hkgyz4w92thha22f4qy8w4tyezugjmncsw8tkyl8qrfvtx3eqpsrgen",
+              "hexed": "0x23a97b2082ab8aa5defd52935010eeaac9917112dcf1071d7627ce01a58b3472"
+            }
+          }
+        ]
+      },
+      "required": {
+        "type": "hpl_hook_aggregate",
+        "address": "stride1w789a8kejd8dyde7yrd6jr75xcmehfsgzafyjf6yxruas2r03zxs2ytq4e",
+        "hexed": "0x778e5e9ed9934ed2373e20dba90fd436379ba608175249274430f9d8286f888d",
+        "hooks": [
+          {
+            "type": "hpl_hook_pausable",
+            "address": "stride1fr2mvh79fravcm6gtktadxwuqhe84trhkhsnpypm8xv8j7qljzfsx08hdu",
+            "hexed": "0x48d5b65fc548facc6f485d97d699dc05f27aac77b5e130903b399879781f9093"
+          },
+          {
+            "type": "hpl_hook_fee",
+            "address": "stride1py4tdu5vqnpmrc06nxzt7tldkulxp4nljgrg768vz8p3h4hk68msd3dykd",
+            "hexed": "0x092ab6f28c04c3b1e1fa9984bf2fedb73e60d67f92068f68ec11c31bd6f6d1f7"
+          }
+        ]
+      }
+    },
+    "warp": {
+      "native": [],
+      "cw20": []
+    },
+    "test": {
+      "msg_receiver": {
+        "type": "hpl_test_mock_msg_receiver",
+        "address": "stride1uhpc7kf5arps075hzm8s3uq4f7p5qwzsj38z6jgc4j84c4v0nryq4v2fpw",
+        "hexed": "0xe5c38f5934e8c307fa9716cf08f0154f83403850944e2d4918ac8f5c558f98c8"
+      }
+    }
+  }
 }
