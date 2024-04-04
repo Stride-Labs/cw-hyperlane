@@ -31,11 +31,8 @@ Cargo.lock
 
 # Script setup
 
-config.yaml
-config.*.yaml
 !config.example.yaml
 
-context/*.config.json
 
 tmp/
 dist/

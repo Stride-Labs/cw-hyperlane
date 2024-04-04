@@ -1,5 +1,4 @@
 {
-  "chains": {
     "forma": {
       "blockExplorers": [
         {
@@ -63,8 +62,14 @@
           "http": "http://stride-direct.testnet-1.stridenet.co:9090"
         }
       ],
+      "restUrls": [
+        {
+          "http": "https://stride-validator.testnet-1.stridenet.co/api"
+        }
+      ],
       "canonicalAsset": "ustrd",
       "bech32Prefix": "stride",
+      "slip44": 118,
       "gasPrice": {
         "amount": "0.025",
         "denom": "ustrd"
@@ -83,5 +88,4 @@
       "interchainGasPaymaster": "0xc0a5924faa2cedacc829ab2706a73928b01869410f972aa606276c3700b90a70",
       "merkleTreeHook": "0xef9b187b6e80167007e2b19a2c3af83b995d6e20e455a73c43f8d4d21e9de36a"
     }
-  }
 }

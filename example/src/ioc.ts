@@ -42,11 +42,39 @@ export async function injectDependencies(cmd: Command): Promise<void> {
 
   const provider = {
     query: createPublicClient({
-      chain: sepolia,
+      chain: {
+          id: 984123,
+          network: 'forma',
+          name: 'Forma',
+          nativeCurrency: { name: 'TIA', symbol: 'TIA', decimals: 18 },
+          rpcUrls: {
+            default: {
+              http: ['https://rpc.sketchpad-1.forma.art']
+            },
+            public: {
+              http: ['https://rpc.sketchpad-1.forma.art'],
+              webSocket: undefined
+            }
+          }
+        },
       transport: http(endpoint),
     }),
     exec: createWalletClient({
-      chain: sepolia,
+      chain: {
+        id: 984123,
+        network: 'forma',
+        name: 'Forma',
+        nativeCurrency: { name: 'TIA', symbol: 'TIA', decimals: 18 },
+        rpcUrls: {
+          default: {
+            http: ['https://rpc.sketchpad-1.forma.art']
+          },
+          public: {
+            http: ['https://rpc.sketchpad-1.forma.art'],
+            webSocket: undefined
+          }
+        }
+      },
       account,
       transport: http(endpoint),
     }),

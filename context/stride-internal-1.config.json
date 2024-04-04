@@ -1,0 +1,39 @@
+{
+  "chains": {
+    "strideinternal1": {
+      "name": "strideinternal1",
+      "domainId": 1651,
+      "chainId": "stride-internal-1",
+      "protocol": "cosmos",
+      "rpcUrls": [
+        {
+          "http": "https://stride-validator.testnet-1.stridenet.co"
+        }
+      ],
+      "grpcUrls": [
+        {
+          "http": "http://stride-direct.testnet-1.stridenet.co:9090"
+        }
+      ],
+      "canonicalAsset": "ustrd",
+      "bech32Prefix": "stride",
+      "gasPrice": {
+        "amount": "0.025",
+        "denom": "ustrd"
+      },
+      "contractAddressBytes": 32,
+      "index": {
+        "from": 3747007,
+        "chunk": 10000
+      },
+      "blocks": {
+        "confirmations": 0,
+        "reorgPeriod": 0
+      },
+      "mailbox": "0xac64ed94e98d450795891a18183cb1469535ffd4b56f6b73ef8cfe651500aa46",
+      "validatorAnnounce": "0x4f81ac8e89ecd9d5d7428f6210f2f6b384ddaf43a6ad9983b418db6987100038",
+      "interchainGasPaymaster": "0xc0a5924faa2cedacc829ab2706a73928b01869410f972aa606276c3700b90a70",
+      "merkleTreeHook": "0xef9b187b6e80167007e2b19a2c3af83b995d6e20e455a73c43f8d4d21e9de36a"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "artifacts": {
+    "hpl_mailbox": 302,
+    "hpl_validator_announce": 303,
+    "hpl_ism_aggregate": 304,
+    "hpl_ism_multisig": 305,
+    "hpl_ism_pausable": 306,
+    "hpl_ism_routing": 307,
+    "hpl_igp": 308,
+    "hpl_hook_aggregate": 309,
+    "hpl_hook_fee": 310,
+    "hpl_hook_merkle": 311,
+    "hpl_hook_pausable": 312,
+    "hpl_hook_routing": 313,
+    "hpl_hook_routing_custom": 314,
+    "hpl_hook_routing_fallback": 315,
+    "hpl_test_mock_hook": 316,
+    "hpl_test_mock_ism": 317,
+    "hpl_test_mock_msg_receiver": 318,
+    "hpl_igp_oracle": 319,
+    "hpl_warp_cw20": 320,
+    "hpl_warp_native": 321
+  },
+  "deployments": {
+    "core": {
+      "mailbox": {
+        "type": "hpl_mailbox",
+        "address": "stride143jwm98f34zs09vfrgvps093g62ntl75k4hkkul03nlx29gq4frqx8j6k4",
+        "hexed": "0xac64ed94e98d450795891a18183cb1469535ffd4b56f6b73ef8cfe651500aa46"
+      },
+      "validator_announce": {
+        "type": "hpl_validator_announce",
+        "address": "stride1f7q6er5fanvat46z3a3ppuhkkwzdmt6r56kenqa5rrdknpcsqquq59rvvm",
+        "hexed": "0x4f81ac8e89ecd9d5d7428f6210f2f6b384ddaf43a6ad9983b418db6987100038"
+      }
+    },
+    "isms": {
+      "type": "hpl_ism_multisig",
+      "address": "stride1d7kqq6rf4kvkqctnh9lnmuyx5zajrgtfzvhrel7wug8en0jnd8lqzc76m9",
+      "hexed": "0x6fac006869ad99606173b97f3df086a0bb21a169132e3cffcee20f99be5369fe"
+    },
+    "hooks": {
+      "default": {
+        "type": "hpl_hook_aggregate",
+        "address": "stride19aw40u6ykqwy732k3j28ehvhvzfys98tljswftqwcdswykt5cz9sxrl78x",
+        "hexed": "0x2f5d57f344b01c4f45568c947cdd9760924814ebfca0e4ac0ec360e25974c08b",
+        "hooks": [
+          {
+            "type": "hpl_hook_merkle",
+            "address": "stride1a7d3s7mwsqt8qplzkxdzcwhc8wv46m3qu326w0zrlr2dy85aud4qdhwp9k",
+            "hexed": "0xef9b187b6e80167007e2b19a2c3af83b995d6e20e455a73c43f8d4d21e9de36a"
+          },
+          {
+            "type": "hpl_igp",
+            "address": "stride1czjeyna29nk6ejpf4vnsdfee9zcps62pp7tj4fsxyakrwq9epfcqkl5ska",
+            "hexed": "0xc0a5924faa2cedacc829ab2706a73928b01869410f972aa606276c3700b90a70",
+            "oracle": {
+              "type": "hpl_igp_oracle",
+              "address": "stride1lz50dt4yy5774jwmne8tgwvl9mwzquaz4gdg069cnrhuz0754xvsckynkh",
+              "hexed": "0xf8a8f6aea4253deac9db9e4eb4399f2edc2073a2aa1a87e8b898efc13fd4a999"
+            }
+          }
+        ]
+      },
+      "required": {
+        "type": "hpl_hook_aggregate",
+        "address": "stride1j3tz8gsuf98mpjvdcg5ylfzpa2wdwsqg7aek847tlwu4lhhac66swur7rq",
+        "hexed": "0x945623a21c494fb0c98dc2284fa441ea9cd74008f77363d7cbfbb95fdefdc6b5",
+        "hooks": [
+          {
+            "type": "hpl_hook_pausable",
+            "address": "stride1felxyf4htat7gy9cz4d5640a5f63pm4gcg8qntdprtqmgypal4mqexru5a",
+            "hexed": "0x4e7e6226b75f57e410b8155b4d55fda27510eea8c20e09ada11ac1b4103dfd76"
+          },
+          {
+            "type": "hpl_hook_fee",
+            "address": "stride1xslnrsxxa76nrl2pjgaa6yj8xakhcy4wewj0gpkew490z9amdm7qs0jv0z",
+            "hexed": "0x343f31c0c6efb531fd41923bdd1247376d7c12aecba4f406d9754af117bb6efc"
+          }
+        ]
+      }
+    },
+    "warp": {
+      "native": [
+        {
+          "id": "TIA",
+          "type": "hpl_warp_native",
+          "address": "stride1wkhh3kaes9gaq03r9t2dqctgc77k7gv8xecejw9dh20eczj44knqnf5kx8",
+          "hexed": "0x75af78dbb98151d03e232ad4d06168c7bd6f218736719938adba9f9c0a55ada6"
+        }
+      ],
+      "cw20": []
+    },
+    "test": {
+      "msg_receiver": {
+        "type": "hpl_test_mock_msg_receiver",
+        "address": "stride1cfm2r7lr2ce8kl9uq3qf98jkfdlue3j6nzrjsp29hecly39f057scyhq7f",
+        "hexed": "0xc276a1fbe356327b7cbc0440929e564b7fccc65a9887280545be71f244a97d3d"
+      }
+    }
+  }
+}

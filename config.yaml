@@ -1,0 +1,61 @@
+networks:
+  - id: "stride-internal-1"
+    hrp: "stride"
+    endpoint:
+      rpc: "https://stride-validator.testnet-1.stridenet.co"
+      rest: "https://stride-validator.testnet-1.stridenet.co/api/"
+      grpc: "http://stride-direct.testnet-1.stridenet.co:9090"
+    gas:
+      price: "0.025"
+      denom: "ustrd"
+    domain: 1651
+  - id: "984123"
+    domain: "984123"
+    hrp: "forma"
+    endpoint:
+      rpc: "https://rpc.sketchpad-1.forma.art"
+    nativeCurrency:
+      name: "TIA"
+      symbol: "TIA"
+      decimals: 18
+
+signer: ""
+
+deploy:
+  ism:
+    type: multisig
+    owner: <signer>
+    validators:
+      984123: 
+        addrs:
+          - bb315A4E11ca0B41c5FdA21Dbff33a50c3cdA932
+        threshold: 1
+
+  hooks:
+    default:
+      type: aggregate
+      owner: <signer>
+      hooks:
+        - type: merkle
+
+        - type: igp
+          owner: <signer>
+          configs:
+            984123:
+              exchange_rate: 3000
+              gas_price: 5000
+          default_gas_usage: 30000
+
+    required:
+      type: aggregate
+      owner: <signer>
+      hooks:
+        - type: pausable
+          owner: <signer>
+          paused: false
+
+        - type: fee
+          owner: <signer>
+          fee:
+            amount: 1
+            denom: ustrd
